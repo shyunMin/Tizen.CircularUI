@@ -6,7 +6,7 @@
               x:Class="WearableUIGallery.MainPage">
     <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
         <Label Text="TCName" HorizontalOptions="CenterAndExpand"/>
-        <Entry AutomationId="TCName" x:Name="TCName"  HorizontalOptions="FillAndExpand"/>
+        <Entry AutomationId="TCNameEntry" x:Name="TCNameEntry"  HorizontalOptions="FillAndExpand"/>
         <Button AutomationId="Go" Text="Go"  HorizontalOptions="FillAndExpand" Clicked="Button_Clicked"/>
     </StackLayout>
 </w:CirclePage>
