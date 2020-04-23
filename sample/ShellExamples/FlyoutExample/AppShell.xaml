@@ -1,27 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<w:CircularShell xmlns="http://xamarin.com/schemas/2014/forms"
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:w="clr-namespace:Tizen.Wearable.CircularUI.Forms;assembly=Tizen.Wearable.CircularUI.Forms"
              xmlns:local="clr-namespace:FlyoutExample"
-             x:Class="FlyoutExample.AppShell" FlyoutIcon="favorite.png">
+             x:Class="FlyoutExample.AppShell">
     <ShellItem Route="Main" Title="Main" Icon="home.png">
         <ShellContent Route="content" ContentTemplate="{DataTemplate local:SimplePage}"/>
+    </ShellItem>
+    <ShellItem Route="sh" Title="DailyTargets" Icon="home.png">
+        <ShellContent Route="targets" ContentTemplate="{DataTemplate local:DailyTargetPage}"/>
+    </ShellItem>
+    <ShellItem Route="sh" Title="DateOfBirth" Icon="home.png">
+        <ShellContent Route="date" ContentTemplate="{DataTemplate local:DateOfBirthPage}"/>
+    </ShellItem>
+    <ShellItem Route="sh" Title="Profile" Icon="home.png">
+        <ShellContent Route="profile" ContentTemplate="{DataTemplate local:ProfileSettingPage}"/>
+    </ShellItem>
+    <ShellItem Route="scrollTest" Title="Test scrollview" Icon="paly.png">
+        <ShellContent Route="test33" ContentTemplate="{DataTemplate local:ScrollViewTest1}"/>
+    </ShellItem>
+    <ShellItem Route="Test2" Title="CircleListView" Icon="paly.png">
+        <ShellContent Route="test2" ContentTemplate="{DataTemplate local:CircleListViewPage}"/>
+    </ShellItem>
+    <ShellItem Route="Test4" Title="ListView" Icon="paly.png">
+        <ShellContent Route="test4" ContentTemplate="{DataTemplate local:ListViewPage}"/>
+    </ShellItem>
+    <ShellItem Route="btnTest" Title="Custom Button" Icon="paly.png">
+        <ShellContent Route="btnTest" ContentTemplate="{DataTemplate local:ButtonTestPage}"/>
+    </ShellItem>
+    <ShellItem Route="Test3" Title="Test Stepper" Icon="paly.png">
+        <ShellContent Route="test3" ContentTemplate="{DataTemplate local:RotaryTestPage2}"/>
+    </ShellItem>
+    <ShellItem Route="Test" Title="Test" Icon="paly.png">
+        <ShellContent Route="test" ContentTemplate="{DataTemplate local:TestPage}"/>
     </ShellItem>
     <ShellItem Route="Config" Title="Config" Icon="play.png">
         <ShellContent Route="content" ContentTemplate="{DataTemplate local:ConfigPage}"/>
     </ShellItem>
     <ShellItem Route="Level0" FlyoutDisplayOptions="AsMultipleItems">
-        <ShellSection Route="Level1-1" Title="Level1-1" Icon="favorite.png">
-            <ShellContent Route="Level2" ContentTemplate="{DataTemplate local:SimplePage}"/>
-        </ShellSection>
         <ShellSection Route="Level1-2" Title="Level1-2" FlyoutDisplayOptions="AsMultipleItems">
             <ShellContent Route="Level2-0" Title="Level2-0" Icon="work.png" ContentTemplate="{DataTemplate local:RandomColorPage}"/>
-            <ShellContent Route="Level2-1" Title="Level2-1" Icon="play.png" ContentTemplate="{DataTemplate local:RandomColorPage}"/>
+            <ShellContent Route="Level2-1" Title="Level2-1" Icon="play.png" ContentTemplate="{DataTemplate local:ListViewPage}"/>
             <ShellContent Route="Level2-2" Title="Level2-2" Icon="inbox.png" ContentTemplate="{DataTemplate local:RandomColorPage}"/>
-            <ShellContent Route="Level2-3" Title="Level2-3" Icon="work.png" ContentTemplate="{DataTemplate local:RandomColorPage}"/>
-            <ShellContent Route="Level2-4" Title="Level2-4" Icon="play.png" ContentTemplate="{DataTemplate local:RandomColorPage}"/>
-            <ShellContent Route="Level2-5" Title="Level2-5" Icon="inbox.png" ContentTemplate="{DataTemplate local:RandomColorPage}"/>
-            <ShellContent Route="Level2-6" Title="Level2-6" Icon="inbox.png">
+            <!--<ShellContent Route="Level2-8" Title="Level2-8" Icon="play.png" ContentTemplate="{DataTemplate local:ButtonPage}"/>-->
+            <ShellContent Route="Level2-4" Title="Level2-3" Icon="work.png" ContentTemplate="{DataTemplate local:RandomColorPage}"/>
+            <ShellContent Route="Level2-5" Title="Level2-4" Icon="play.png" ContentTemplate="{DataTemplate local:RandomColorPage}"/>
+            <ShellContent Route="Level2-6" Title="Level2-5" Icon="inbox.png" ContentTemplate="{DataTemplate local:RandomColorPage}"/>
+            <ShellContent Route="Level2-7" Title="Level2-6" Icon="inbox.png">
                 <ContentPage>
                     <StackLayout>
                         <Button Text="Click"/>
@@ -29,8 +53,25 @@
                 </ContentPage>
             </ShellContent>
         </ShellSection>
-        <ShellContent Route="Level1-3" Title="Level1-3" ContentTemplate="{DataTemplate local:SimplePage}"/>
+        <ShellSection Route="ListViewTest" Title="ListView Test" FlyoutDisplayOptions="AsMultipleItems">
+            <ShellContent Route="ListViewTest1" Title="ListViewTest1" Icon="work.png" ContentTemplate="{DataTemplate local:ListViewTest1}"/>
+            <ShellContent Route="ListViewTest2" Title="ListViewTest2" Icon="work.png" ContentTemplate="{DataTemplate local:ListViewTest2}"/>
+            <ShellContent Route="ListViewTest3" Title="ListViewTest3" Icon="work.png" ContentTemplate="{DataTemplate local:ListViewTest3}"/>
+            <ShellContent Route="ListViewTest4" Title="ListViewTest4" Icon="work.png" ContentTemplate="{DataTemplate local:ListViewTest4}"/>
+            <ShellContent Route="ListViewTest5" Title="ListViewTest5" Icon="work.png" ContentTemplate="{DataTemplate local:ListViewTest5}"/>
+            <ShellContent Route="ListViewTest6" Title="ListViewTest6" Icon="work.png" ContentTemplate="{DataTemplate local:ListViewTest6}"/>
+            <ShellContent Route="ListViewTest7" Title="ListViewTest7" Icon="work.png" ContentTemplate="{DataTemplate local:ListViewTest7}"/>
+            <ShellContent Route="ListViewTest8" Title="ListViewTest8" Icon="work.png" ContentTemplate="{DataTemplate local:ListViewTest8}"/>
+            <ShellContent Route="ListViewTest9" Title="ListViewTest9" Icon="work.png" ContentTemplate="{DataTemplate local:ListViewTest9}"/>
+            <ShellContent Route="ListViewTest10" Title="ListViewTest10" Icon="work.png" ContentTemplate="{DataTemplate local:ListViewTest10}"/>
+            <ShellContent Route="ListViewTest11" Title="ListViewTest11" Icon="work.png" ContentTemplate="{DataTemplate local:ListViewTest11}"/>
+            <ShellContent Route="ListViewTest12" Title="ListViewTest12" Icon="work.png" ContentTemplate="{DataTemplate local:ListViewTest12}"/>
+            <ShellContent Route="ListViewTest13" Title="ListViewTest13" Icon="work.png" ContentTemplate="{DataTemplate local:ListViewTest13}"/>
+            <ShellContent Route="ListViewTest14" Title="ListViewTest14" Icon="work.png" ContentTemplate="{DataTemplate local:ListViewTest14}"/>
+            <ShellContent Route="ListViewFooterTest1" Title="ListViewFooterTest1" Icon="work.png" ContentTemplate="{DataTemplate local:ListViewFooterTest1}"/>
+            <ShellContent Route="ListViewHeaderTest1" Title="ListViewHeaderTest1" Icon="work.png" ContentTemplate="{DataTemplate local:ListViewHeaderTest1}"/>
+        </ShellSection>
     </ShellItem>
     <MenuItem Text="Menu1" Command="{Binding OnMenu1}"/>
     <MenuItem Text="Menu2" Command="{Binding OnMenu2}"/>
-</w:CircularShell>
+</Shell>

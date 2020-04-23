@@ -13,14 +13,44 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="lib\" />
+    <Folder Include="ListView\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.4.0.991537" />
+    <None Include="ConfigPage - Copy.xaml" />
   </ItemGroup>
-
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Xamarin.Forms\Xamarin.Forms.Core\Xamarin.Forms.Core.csproj" />
+    <ProjectReference Include="..\..\..\..\..\Xamarin.Forms\Xamarin.Forms.Platform.Tizen\Xamarin.Forms.Platform.Tizen.csproj" />
+    <ProjectReference Include="..\..\..\..\..\Xamarin.Forms\Xamarin.Forms.Platform\Xamarin.Forms.Platform.csproj" />
+    <ProjectReference Include="..\..\..\..\..\Xamarin.Forms\Xamarin.Forms.Xaml\Xamarin.Forms.Xaml.csproj" />
     <ProjectReference Include="..\..\..\src\Tizen.Wearable.CircularUI.Forms.Renderer\Tizen.Wearable.CircularUI.Forms.Renderer.csproj" />
     <ProjectReference Include="..\..\..\src\Tizen.Wearable.CircularUI.Forms\Tizen.Wearable.CircularUI.Forms.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="SH_ProfileSettingPage.xaml.cs">
+      <DependentUpon>SH_ProfileSettingPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="SH_DataOfBirthPage.xaml.cs">
+      <DependentUpon>SH_DataOfBirthPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="SH_DailyTargetPage.xaml.cs">
+      <DependentUpon>SH_DailyTargetPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="ListViewPage.xaml.cs">
+      <DependentUpon>ListViewPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="RotaryTestPage2.xaml.cs">
+      <DependentUpon>RotaryTestPage2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="CircleListViewPage.xaml.cs">
+      <DependentUpon>CircleListViewPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="ButtonTestPage.xaml.cs">
+      <DependentUpon>ButtonTestPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="TestPage.xaml.cs">
+      <DependentUpon>TestPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>

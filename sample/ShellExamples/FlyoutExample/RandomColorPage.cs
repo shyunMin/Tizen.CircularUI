@@ -8,12 +8,12 @@ namespace FlyoutExample
 {
     public class RandomColorPage : ContentPage
     {
-        Label Title;
+        Label TitleLabel;
         public RandomColorPage()
         {
             Console.WriteLine("Create RandomColorPage");
             var rand = new Random();
-            Title = new Label()
+            TitleLabel = new Label()
             {
                 HorizontalOptions = LayoutOptions.CenterAndExpand,
                 VerticalOptions = LayoutOptions.CenterAndExpand,
@@ -32,7 +32,7 @@ namespace FlyoutExample
                         VerticalOptions = LayoutOptions.Center,
                         Text = $"Color : {color.ToHex()}"
                     },
-                    Title,
+                    TitleLabel,
                 }
             };
         }
@@ -42,7 +42,7 @@ namespace FlyoutExample
             base.OnAppearing();
             Device.BeginInvokeOnMainThread(() =>
             {
-                Title.Text = Shell.Current.CurrentState.Location.ToString();
+                TitleLabel.Text = Shell.Current.CurrentState.Location.ToString();
             });
         }
     }

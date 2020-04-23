@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 
 using Xamarin.Forms;
-using Tizen.Wearable.CircularUI.Forms;
 
 namespace FlyoutExample
 {

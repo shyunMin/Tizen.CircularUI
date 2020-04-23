@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c="clr-namespace:FlyoutExample;assembly=FlyoutExample"
+             x:Class="FlyoutExample.ButtonTestPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" 
+                     HorizontalOptions="CenterAndExpand">
+            <c:ViewButton x:Name="button" 
+                            MinimumHeightRequest="100" 
+                            MinimumWidthRequest="200"
+                            Clicked="OnButtonClicked"
+                            Pressed="OnButtonPressed"
+                            Released="OnButtonReleased">
+                <c:ViewButton.View>
+                    <AbsoluteLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                        <Image x:Name="buttonBorder" Source="button_border.png" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="SizeProportional" />
+                        <Image x:Name="buttonBg" Source="button_bg.png" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="SizeProportional" />
+                    </AbsoluteLayout>
+                </c:ViewButton.View>
+            </c:ViewButton>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

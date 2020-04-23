@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<w:CirclePage xmlns="http://xamarin.com/schemas/2014/forms"
+              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:c="clr-namespace:FlyoutExample;assembly=FlyoutExample"
+              xmlns:w="clr-namespace:Tizen.Wearable.CircularUI.Forms;assembly=Tizen.Wearable.CircularUI.Forms"
+              xmlns:tizen="clr-namespace:Xamarin.Forms.PlatformConfiguration.TizenSpecific;assembly=Xamarin.Forms.Core"
+              x:Class="FlyoutExample.ProfileSettingPage"
+              x:Name="page"
+              RotaryFocusObject="{x:Reference stepper1}" >
+    <w:CirclePage.Content>
+        <AbsoluteLayout
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand">
+            <Label x:Name="titleLabel"
+                   HorizontalTextAlignment="Center"
+                   AbsoluteLayout.LayoutBounds=".5, 51, 210, 40"
+                   AbsoluteLayout.LayoutFlags="XProportional" >
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Title"
+                              TextColor="Aqua"
+                              FontAttributes="Bold"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <!-- -->
+            <!--<BoxView Color="Pink"
+                     AbsoluteLayout.LayoutBounds="107, 81, 145, 151" />-->
+            <c:CustomStepper x:Name="stepper1"
+                             AbsoluteLayout.LayoutBounds="107, 81, 91, 151"
+                             Activated="OnActivated"
+                             Deactivated="OnDeactivated"
+                             Focused="OnStepper1Focused"/>
+            <!--<BoxView Color="Red"
+                     AbsoluteLayout.LayoutBounds="198, 165, 12, 20" />-->
+            <Label x:Name="dotLabel"
+                   HorizontalTextAlignment="Center"
+                   AbsoluteLayout.LayoutBounds="198, 165, 12, 20" >
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="."
+                              FontAttributes="Bold"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <c:CustomStepper x:Name="stepper2"
+                             AbsoluteLayout.LayoutBounds="210, 81, 42, 151"
+                             Activated="OnActivated"
+                             Deactivated="OnDeactivated"
+                             Focused="OnStepper2Focused"/>
+            <!-- -->
+            <!--<BoxView Color="Purple"
+                     AbsoluteLayout.LayoutBounds=".5, 165, 100, 100"
+                     AbsoluteLayout.LayoutFlags="XProportional" />-->
+            <c:ContentButton x:Name="unitButton2"
+                             AbsoluteLayout.LayoutBounds=".5, 165, 100, 100"
+                             AbsoluteLayout.LayoutFlags="XProportional"
+                             Pressed="OnUnitButtonPressed"
+                             Released="OnUnitButtonReleased"
+                             Clicked="OnUnitButtonClicked">
+                <c:ContentButton.Content>
+                    <AbsoluteLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                        <Image x:Name="unitButtonBg"
+                               Source="b_common_text_press_ef.png"
+                               Opacity="0"
+                               Aspect="AspectFill"
+                               tizen:Image.BlendColor="White" 
+                               AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                               AbsoluteLayout.LayoutFlags="SizeProportional" />
+                        <Label x:Name="unitButtonText"
+                               HorizontalTextAlignment="Center"
+                               VerticalTextAlignment="Center"
+                               AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                               AbsoluteLayout.LayoutFlags="SizeProportional">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="unit" FontSize="10" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </AbsoluteLayout>
+                </c:ContentButton.Content>
+            </c:ContentButton>
+
+            <!-- -->
+            <c:ContentButton x:Name="button"
+                             AbsoluteLayout.LayoutBounds=".5, 268, 210, 72"
+                             AbsoluteLayout.LayoutFlags="XProportional"
+                             Pressed="OnButtonPressed"
+                             Released="OnButtonReleased"
+                             Clicked="OnButtonClicked">
+                <c:ContentButton.Content>
+                    <AbsoluteLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                        <Image x:Name="buttonBg"
+                               Source="w_13_0_daily_activity_bg.png"
+                               Opacity="0.5"
+                               Aspect="AspectFit"
+                               tizen:Image.BlendColor="Aqua" 
+                               AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                               AbsoluteLayout.LayoutFlags="SizeProportional" />
+                        <Label x:Name="buttonText"
+                               HorizontalTextAlignment="Center"
+                               VerticalTextAlignment="Center"
+                               AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                               AbsoluteLayout.LayoutFlags="SizeProportional">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Done" FontSize="12" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </AbsoluteLayout>
+                </c:ContentButton.Content>
+            </c:ContentButton>
+        </AbsoluteLayout>
+    </w:CirclePage.Content>
+</w:CirclePage>
