@@ -3,12 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:w="clr-namespace:Tizen.Wearable.CircularUI.Forms;assembly=Tizen.Wearable.CircularUI.Forms"
              BackgroundImageSource="bg.jpg"
-             x:Class="FlyoutExample.SimplePage">
+             x:Class="FlyoutExample.AAASimplePage">
     <ContentPage.Content>
         <StackLayout BackgroundColor="#222222" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
             <Label x:Name="PageTitle"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="FillAndExpand" />
+            <Button Text="click"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand"
+                    Clicked="OnClicked"/>
         </StackLayout>
     </ContentPage.Content>
 </w:CirclePage>

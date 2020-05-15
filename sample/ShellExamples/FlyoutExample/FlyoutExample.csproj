@@ -12,15 +12,55 @@
     <DebugType>None</DebugType>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="lib\" />
+    <Compile Remove="LIstViewTest.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.6.0.726" />
+    <EmbeddedResource Remove="LIstViewTest.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lib\" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Xamarin.Forms\Xamarin.Forms.Core\Xamarin.Forms.Core.csproj" />
+    <ProjectReference Include="..\..\..\..\..\Xamarin.Forms\Xamarin.Forms.Platform.Tizen\Xamarin.Forms.Platform.Tizen.csproj" />
+    <ProjectReference Include="..\..\..\..\..\Xamarin.Forms\Xamarin.Forms.Platform\Xamarin.Forms.Platform.csproj" />
+    <ProjectReference Include="..\..\..\..\..\Xamarin.Forms\Xamarin.Forms.Xaml\Xamarin.Forms.Xaml.csproj" />
     <ProjectReference Include="..\..\..\src\Tizen.Wearable.CircularUI.Forms.Renderer\Tizen.Wearable.CircularUI.Forms.Renderer.csproj" />
     <ProjectReference Include="..\..\..\src\Tizen.Wearable.CircularUI.Forms\Tizen.Wearable.CircularUI.Forms.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="CircleTimePickerTest.xaml.cs">
+      <DependentUpon>CircleTimePickerTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="CircleStepperTest.xaml.cs">
+      <DependentUpon>CircleStepperTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="CircleDatePickerTest.xaml.cs">
+      <DependentUpon>CircleDatePickerTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="AAAScrollViewTest2.xaml.cs">
+      <DependentUpon>AAAScrollViewTest2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="AAASimplePage.xaml.cs">
+      <DependentUpon>AAASimplePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="TimePickerTest.xaml.cs">
+      <DependentUpon>TimePickerTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="DatePickerTest.xaml.cs">
+      <DependentUpon>DatePickerTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="ScollViewTest.xaml.cs">
+      <DependentUpon>ScollViewTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="StepperTest.xaml.cs">
+      <DependentUpon>StepperTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="ScollerTestPage.xaml.cs">
+      <DependentUpon>ScollerTestPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>

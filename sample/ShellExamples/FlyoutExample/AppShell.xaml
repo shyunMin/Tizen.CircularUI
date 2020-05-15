@@ -6,6 +6,33 @@
     <ShellItem Route="Main" Title="{Binding MainTitle, Mode=OneWay}" Icon="home.png">
         <ShellContent Route="content" Title="Main" ContentTemplate="{DataTemplate local:SimplePage}"/>
     </ShellItem>
+    <ShellItem Route="AAASimplePage" Title="AAASimplePage" Icon="play.png">
+        <ShellContent Route="AAASimplePage" ContentTemplate="{DataTemplate local:AAASimplePage}"/>
+    </ShellItem>
+    <ShellItem Route="CircleTimePickerTest" Title="CircleTimePickerTest" Icon="play.png">
+        <ShellContent Route="CircleTimePickerTest" ContentTemplate="{DataTemplate local:CircleTimePickerTest}"/>
+    </ShellItem>
+    <ShellItem Route="TimePickerTest" Title="TimePickerTest" Icon="play.png">
+        <ShellContent Route="TimePickerTest" ContentTemplate="{DataTemplate local:TimePickerTest}"/>
+    </ShellItem>
+    <ShellItem Route="CircleDatePickerTest" Title="CircleDatePickerTest" Icon="play.png">
+        <ShellContent Route="CircleDatePickerTest" ContentTemplate="{DataTemplate local:CircleDatePickerTest}"/>
+    </ShellItem>
+    <ShellItem Route="DatePickerTest" Title="DatePickerTest" Icon="play.png">
+        <ShellContent Route="DatePickerTest" ContentTemplate="{DataTemplate local:DatePickerTest}"/>
+    </ShellItem>
+    <ShellItem Route="ScrollViewTest" Title="ScrollViewTest" Icon="play.png">
+        <ShellContent Route="ScrollViewTest" ContentTemplate="{DataTemplate local:ScrollViewTest}"/>
+    </ShellItem>
+    <ShellItem Route="CircleStepperTest" Title="CircleStepperTest" Icon="play.png">
+        <ShellContent Route="CircleStepperTest" ContentTemplate="{DataTemplate local:CircleStepperTest}"/>
+    </ShellItem>
+    <ShellItem Route="ScrollerTestPage" Title="ScrollerTestPage" Icon="play.png">
+        <ShellContent Route="ScrollerTestPage" ContentTemplate="{DataTemplate local:ScrollerTestPage}"/>
+    </ShellItem>
+    <ShellItem Route="StepperTest" Title="StepperTest" Icon="play.png">
+        <ShellContent Route="StepperTest" ContentTemplate="{DataTemplate local:StepperTest}"/>
+    </ShellItem>
     <ShellItem Route="Config" Title="Config" Icon="play.png">
         <ShellContent Route="content" ContentTemplate="{DataTemplate local:ConfigPage}"/>
     </ShellItem>

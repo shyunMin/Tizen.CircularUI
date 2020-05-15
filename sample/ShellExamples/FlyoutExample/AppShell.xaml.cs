@@ -41,6 +41,8 @@ namespace FlyoutExample
         {
             InitializeComponent();
             BindingContext = ShellModel.Instance;
+
+            Routing.RegisterRoute("test", typeof(SimpleScrollViewTest));
         }
 
         protected override bool OnBackButtonPressed()

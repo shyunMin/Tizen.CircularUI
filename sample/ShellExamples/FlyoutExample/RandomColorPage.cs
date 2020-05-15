@@ -8,7 +8,7 @@ namespace FlyoutExample
 {
     public class RandomColorPage : ContentPage
     {
-        Label Title;
+        new Label Title;
 
         public RandomColorPage()
         {

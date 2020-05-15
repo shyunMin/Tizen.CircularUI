@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace FlyoutExample
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class SimplePage : CirclePage
+	public partial class AAASimplePage : CirclePage
 	{
-		public SimplePage()
+		public AAASimplePage()
 		{
 			InitializeComponent();
         }
@@ -24,6 +24,12 @@ namespace FlyoutExample
             {
                 PageTitle.Text = Shell.Current.CurrentState.Location.ToString();
             });
+        }
+
+        void OnClicked(object sender, EventArgs args)
+        {
+            Console.WriteLine($"##### clicked!!!");
+            Shell.Current.GoToAsync("test");
         }
     }
 }

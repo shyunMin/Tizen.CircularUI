@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<w:CirclePage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:w="clr-namespace:Tizen.Wearable.CircularUI.Forms;assembly=Tizen.Wearable.CircularUI.Forms"
+             BackgroundImageSource="bg.jpg"
+             x:Class="FlyoutExample.ScrollerTestPage"
+              RotaryFocusObject="{x:Reference scoller2}">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#222222" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <ScrollView HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        BackgroundColor="Pink">
+                <ScrollView.Content>
+                    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                        <Label Text="test"
+                               VerticalOptions="CenterAndExpand" 
+                               HorizontalOptions="CenterAndExpand"
+                               HeightRequest="100"/>
+                        <Label Text="test"
+                               VerticalOptions="CenterAndExpand" 
+                               HorizontalOptions="CenterAndExpand"
+                               HeightRequest="100"/>
+                        <Label Text="test"
+                               VerticalOptions="CenterAndExpand" 
+                               HorizontalOptions="CenterAndExpand"
+                               HeightRequest="100"/>
+                        <Label Text="test"
+                               VerticalOptions="CenterAndExpand" 
+                               HorizontalOptions="CenterAndExpand"
+                               HeightRequest="100"/>
+                    </StackLayout>
+                </ScrollView.Content>
+            </ScrollView>
+            <ScrollView HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand"
+                                BackgroundColor="Blue"
+                                x:Name="scoller2">
+                <ScrollView.Content>
+                    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                        <Label Text="test"
+                               VerticalOptions="CenterAndExpand" 
+                               HorizontalOptions="CenterAndExpand"
+                               HeightRequest="100"/>
+                        <Label Text="test"
+                               VerticalOptions="CenterAndExpand" 
+                               HorizontalOptions="CenterAndExpand"
+                               HeightRequest="100"/>
+                        <Label Text="test"
+                               VerticalOptions="CenterAndExpand" 
+                               HorizontalOptions="CenterAndExpand"
+                               HeightRequest="100"/>
+                        <Label Text="test"
+                               VerticalOptions="CenterAndExpand" 
+                               HorizontalOptions="CenterAndExpand"
+                               HeightRequest="100"/>
+                    </StackLayout>
+                </ScrollView.Content>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</w:CirclePage>

@@ -3,12 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:w="clr-namespace:Tizen.Wearable.CircularUI.Forms;assembly=Tizen.Wearable.CircularUI.Forms"
              BackgroundImageSource="bg.jpg"
-             x:Class="FlyoutExample.SimplePage">
+             x:Class="FlyoutExample.DatePickerTest">
     <ContentPage.Content>
         <StackLayout BackgroundColor="#222222" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-            <Label x:Name="PageTitle"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <DatePicker VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand"/>
+            <Stepper VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand"/>
         </StackLayout>
     </ContentPage.Content>
 </w:CirclePage>

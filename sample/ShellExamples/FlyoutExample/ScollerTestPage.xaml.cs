@@ -10,20 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace FlyoutExample
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class SimplePage : CirclePage
+	public partial class ScrollerTestPage : CirclePage
 	{
-		public SimplePage()
+		public ScrollerTestPage()
 		{
 			InitializeComponent();
-        }
-
-        protected override void OnAppearing()
-        {
-            base.OnAppearing();
-            Device.BeginInvokeOnMainThread(() =>
-            {
-                PageTitle.Text = Shell.Current.CurrentState.Location.ToString();
-            });
         }
     }
 }
